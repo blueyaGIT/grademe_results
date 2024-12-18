@@ -1,9 +1,0 @@
-#ignore 42-EXAM except my progress folders
-.github/
-.subjects/
-.system/
-.gitattributes
-CONTRIBUTING.md
-LICENSE
-Makefile
-README.md
