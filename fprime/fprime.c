@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void print_prime_factors(int n) {
+void print_prime_factors(int n)
+{
     int i = 2;
     int first = 1;
 
@@ -19,7 +20,8 @@ void print_prime_factors(int n) {
     printf("\n");
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
     if (argc != 2) {
         printf("\n");
         return 1;
