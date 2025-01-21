@@ -14,3 +14,7 @@ rstr_capitalizer
 snake_to_camel
 sort_list
 tab_mult
+ft_swap
+ft_strdup
+epur_str
+flood_fill
