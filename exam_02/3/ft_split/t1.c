@@ -3,11 +3,10 @@
 int wrdlen(char *str)
 {
 	int i = 0;
-	while (str[i] != '\0' && str[i] != ' ' &&  str[i] != '\t' &&  str[i] != '\n')
+	while (str[i] != ' ' && str[i] != '\t' && str[i] != '\n' && str[i] != '\0')
 		i++;
 	return (i);
 }
-
 char *word_dupe(char *str)
 {
 	int i = 0;
@@ -31,7 +30,7 @@ void fill_words(char **array, char *str)
 	{
 		array[idx] = word_dupe(str);
 		idx++;
-		while (*str != '\0' && *str != ' ' &&  *str != '\t' &&  *str != '\n')
+		while (*str != ' ' && *str != '\t' && *str != '\n' && *str != '\0')
 			str++;
 		while (*str == ' ' || *str == '\t' || *str == '\n')
 			str++;
@@ -40,13 +39,13 @@ void fill_words(char **array, char *str)
 
 int count_words(char *str)
 {
-	int count;
+	int count = 0;
 	while (*str == ' ' || *str == '\t' || *str == '\n')
 		str++;
 	while (*str != '\0')
 	{
 		count++;
-		while (*str != '\0' && *str != ' ' &&  *str != '\t' &&  *str != '\n')
+		while (*str != ' ' && *str != '\t' && *str != '\n' && *str != '\0')
 			str++;
 		while (*str == ' ' || *str == '\t' || *str == '\n')
 			str++;
@@ -56,7 +55,7 @@ int count_words(char *str)
 
 char **ft_split(char *str)
 {
-	int num_words;
+	int num_words = 0;
 	char **array;
 
 	num_words = count_words(str);

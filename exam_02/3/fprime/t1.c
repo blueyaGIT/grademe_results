@@ -9,7 +9,7 @@ void fprime(int n)
 	{
 		while (n % i == 0)
 		{
-			if (!first)
+			if(!first)
 				printf("*");
 			printf("%d", i);
 			n /= i;
@@ -18,7 +18,6 @@ void fprime(int n)
 		i++;
 	}
 }
-
 int main(int ac, char **av)
 {
 	if (ac == 2)
