@@ -1,11 +1,10 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 void fprime(int n)
 {
 	int i = 2;
 	int first = 1;
-
 	while (n > 1)
 	{
 		while (n % i == 0)
@@ -23,9 +22,7 @@ void fprime(int n)
 int main(int ac, char **av)
 {
 	if (ac == 2)
-	{
 		fprime(atoi(av[1]));
-	}
 	printf("\n");
 	return (0);
 }
