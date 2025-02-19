@@ -6,9 +6,7 @@
 void put_s(char *s, int *count)
 {
     if(!s)
-    {
         s="(null)";
-    }
     while(*s)
     {
         write(1, s++, 1);
@@ -32,9 +30,7 @@ void put_d(long int n, int *count)
         n=-n;
     }
     if(n >9)
-    {
         put_d(n/10, count);
-    }
     n = n % 10 + '0';
     write(1, &n, 1);
     (*count)++;
@@ -67,11 +63,11 @@ int ft_printf(const char *format, ...)
             write(1, format, 1);
             num++;
         }
-             format++;
+		format++;
 
     }
-        va_end(args);
-        return(num);
+	va_end(args);
+	return(num);
 }
 
 // int main()
